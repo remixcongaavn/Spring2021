@@ -1,0 +1,60 @@
+	p1	p2
+---------------------
+r1	1	y
+r2	y	1
+allocation/request table
+
+
+allocation table:
+	p1	p2
+---------------------
+r1	1	0	
+r2	0	1
+
+request table
+	p1	p2
+---------------------
+r1	0	1	
+r2	1	0
+
+note there is symmetry and reflexivity in the deadlock state above.
+
+
+not deadlock:
+
+allocation table:
+	p1	p2
+---------------------
+r1	1	0	
+r2	0	0
+
+request table
+	p1	p2
+---------------------
+r1	0	1	
+r2	1	1
+
+
+deadlock detection :
+allocation table:
+	p1	p2	p3	p4	p5
+----------------------------------------------
+r1		1
+r2	1
+r3					1
+r4			1
+r5				1
+
+request table:
+	p1	p2	p3	p4	p5
+----------------------------------------------
+r1	1	
+r2				1	
+r3		1
+r4		1
+r5		1	1
+
+
+
+
+

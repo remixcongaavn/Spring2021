@@ -1,0 +1,12 @@
+32-bit CPU is the standard model that OS is based on.
+8 bits per byte means 4 bytes of data on the cpu.
+4 bytes for an int, float (original model)
+64-bit CPU and guess what...still 4 bytes for these data types,
+rest of it is wasted space
+double uses a double-size or double precision float...8 bytes
+uses all the bits on the cpu.
+this is stored in the registers
+Ax, Bx, Cx, Dx registers are most common (and will be used for this example)
+64 bits lets you address some number of memory addresses in RAM.
+ABCDEF12 could be the base address (stored in Ax for example)
+ABCDEFFF could be the limit address (stored in Bx for example)

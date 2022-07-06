@@ -1,0 +1,38 @@
+begin {
+Get username and password from user
+	enterUsername();
+	enterPassword();
+	verify := false;  
+}
+
+enterUsername, enterPassword := true
+		if (enterUsername, enterPassword is in verify())
+			verify := true
+			writeln("Login successful!")
+		else 
+			verify := false
+			writeln("Username or password not correct")
+
+if enterUsername and enterPassword is in dataBase then 
+
+verify := true 
+
+		Display(mainScene)
+		Display(options)
+		Display(info)
+		Display(chart)
+		Display(logOut)
+		......
+		system read and updated file..
+		//user allow to make any option they want  
+		
+		if chart is selected from database
+			system update
+			system loading
+			system display
+			
+		if......	
+		
+		if logOut is selected from database	
+			system logOut
+} end
